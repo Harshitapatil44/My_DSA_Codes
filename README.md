@@ -29,11 +29,11 @@ Deque
 #Repository Structure
 DSA-Python/
 │
-├── Arrays/
-├── Strings/
-├── LinkedLists/
-├── Stack/
-├── Queue/
+├── Arrays
+├── Strings
+├── LinkedLists
+├── Stack
+├── Queue
 └── Deque
 
 --------
