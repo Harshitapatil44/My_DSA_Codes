@@ -34,7 +34,7 @@ DSA-Python/
 ├── LinkedLists/
 ├── Stack/
 ├── Queue/
-├── Deque
+└── Deque
 
 --------
 
