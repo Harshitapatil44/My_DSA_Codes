@@ -27,7 +27,7 @@ Deque
 ---------
 
 #Repository Structure
-DSA-Python/
+DSA-Python
 │
 ├── Arrays
 ├── Strings
