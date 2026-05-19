@@ -15,14 +15,14 @@ Python
 --------
 
 #Topics Covered
-Arrays
-Strings
-Singly Linked Lists
-Doubly Linked List
-Circular linked Lists
-Stack
-Queue
-Deque
+1. Arrays
+2. Strings
+3. Singly Linked Lists
+4. Doubly Linked List
+5. Circular linked Lists
+6. Stack
+7. Queue
+8. Deque
 
 ---------
 
