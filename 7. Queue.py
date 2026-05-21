@@ -4,7 +4,7 @@
 # Priority queue -
 # Queue Application -
 
-"""class Queue:
+class Queue:
     def __init__(self):
         self.items = []
 
@@ -32,7 +32,7 @@ q.insert(50)
 print(q.delete())
 print(q.delete())
 print(q.delete())
-print(q.delete())"""
+print(q.delete())
 
 
 # Array implementation:-
@@ -68,15 +68,60 @@ class Arr_queue:
         return val
 
 
-q = Arr_queue(10)
+arr = Arr_queue(5)
 
 items = list(map(int, input().split()))
+for el in items:
+    arr.insert(el)
 
-for i in items:
-    q.insert(i)
-
-print(q.delete())
-print(q.delete())
-print(q.delete())
+while arr.front != -1:
+    print(arr.delete())
 
 # Linked List implementation:-
+class node:
+    def __init__(self, data, size=None):
+        self.data = data
+        self.size = size
+
+
+class QueueLL:
+    def __init__(self):
+        self.front = -1
+        self.rear = -1
+
+    def is_empty(self):
+        return self.front is None
+
+    def insert(self, val):
+        temp = node(val)
+
+        if self.is_empty:
+            self.front = temp
+            self.rear = temp
+        else:
+            self.rear.next = temp
+            self.rear = temp
+
+    def delete(self):
+        if self.is_empty():
+            print("Queue is Empty")
+            return
+        temp = self.front
+        self.front = self.front.next
+
+        if self.front is None:
+            self.rear = None
+
+        return temp.data
+
+
+q = QueueLL()
+items = list(map(int, input().split()))
+for el in items:
+    q.insert(el)
+
+while not q.is_empty():
+    print(q.delete())
+        
+
+
