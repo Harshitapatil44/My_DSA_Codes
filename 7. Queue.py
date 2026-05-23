@@ -122,6 +122,17 @@ for el in items:
 
 while not q.is_empty():
     print(q.delete())
-        
+
+# Circular Queue:- 
+
+
+
+
+
+
+
+
+
+
 
 
