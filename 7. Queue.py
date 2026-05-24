@@ -1,7 +1,12 @@
 # Array implementation - (done)
 # Linked List implementation - (done)
 # Priority queue - (done) 
-# Queue Application -
+# Queue Application - 
+    # 1. CPU Scheduling
+    # 2. Printer Queue
+    # 3. BFS (Breadth First Search)
+    # 4. Ticket/Waiting Line Systems
+    # 5. Message/Task Scheduling
 
 class Queue:
     def __init__(self):
