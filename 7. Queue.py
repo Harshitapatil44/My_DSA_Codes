@@ -79,15 +79,15 @@ while arr.front != -1:
 
 # Linked List implementation:-
 class node:
-    def __init__(self, data, size=None):
+    def __init__(self, data):
         self.data = data
-        self.size = size
+        self.next = None
 
 
 class QueueLL:
     def __init__(self):
-        self.front = -1
-        self.rear = -1
+        self.front = None
+        self.rear = None
 
     def is_empty(self):
         return self.front is None
@@ -95,7 +95,7 @@ class QueueLL:
     def insert(self, val):
         temp = node(val)
 
-        if self.is_empty:
+        if self.is_empty():
             self.front = temp
             self.rear = temp
         else:
@@ -106,6 +106,7 @@ class QueueLL:
         if self.is_empty():
             print("Queue is Empty")
             return
+
         temp = self.front
         self.front = self.front.next
 
@@ -115,11 +116,11 @@ class QueueLL:
         return temp.data
 
 
-q = QueueLL()
+qLL = QueueLL()
 items = list(map(int, input().split()))
+
 for el in items:
-    q.insert(el)
+    qLL.insert(el)
 
-while not q.is_empty():
-    print(q.delete())
-
+while not qLL.is_empty():
+    print(qLL.delete())
