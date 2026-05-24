@@ -1,7 +1,6 @@
 # Array implementation - (done)
 # Linked List implementation - (done)
-# Circular queue -
-# Priority queue -
+# Priority queue - (done) 
 # Queue Application -
 
 class Queue:
@@ -124,3 +123,44 @@ for el in items:
 
 while not qLL.is_empty():
     print(qLL.delete())
+
+# Priority Queue:-
+class priorityQueue:
+    def __init__(self):
+        self.items = []
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+    def insert(self, priority, val):
+        self.items.append((priority, val))
+
+    def delete(self):
+        if self.is_empty():
+            print("Priority Queue is Empty")
+            return
+
+        highest = 0
+
+        for i in range(1, len(self.items)):
+            if self.items[i][0] < self.items[highest][0]:
+                highest = i
+
+        return self.items.pop(highest)[1]
+
+
+pLL = priorityQueue()
+pLL.insert(2, "B")
+pLL.insert(1, "A")
+pLL.insert(3, "C")
+
+print(pLL.delete())
+print(pLL.delete())
+print(pLL.delete())
+
+
+
+
+
+
+
