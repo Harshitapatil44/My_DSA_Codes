@@ -163,6 +163,9 @@ print(pLL.delete())
 print(pLL.delete())
 print(pLL.delete())
 
+#Queue Applications :- 
+#1. CPU Shedulling- 
+
 
 
 
