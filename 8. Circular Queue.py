@@ -36,3 +36,14 @@ cq.deque()
 cq.deque()
 cq.deque()
 
+# Code for user input: 
+cq = CircularQueue(3)
+items = list(map(int, input("Enter the elements: ").split()))
+
+for el in items:
+    cq.enqueue(el)
+
+while cq.front != -1:
+    cq.deque()
+
+
