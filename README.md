@@ -27,7 +27,7 @@ The purpose of this repository is to improve problem-solving skills, strengthen 
 ---------
 
 # Repository Structure
-'''text
+```text
 **DSA-Python**
 │
 ├── Arrays
@@ -36,7 +36,7 @@ The purpose of this repository is to improve problem-solving skills, strengthen 
 ├── Stack
 ├── Queue
 └── Deque
-'''
+```
 
 --------
 
