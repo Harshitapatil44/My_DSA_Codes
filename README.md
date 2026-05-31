@@ -22,7 +22,8 @@ The purpose of this repository is to improve problem-solving skills, strengthen 
 5. Circular linked Lists
 6. Stack
 7. Queue
-8. Deque
+8. Circular Queue
+9. Deque
 
 ---------
 
@@ -35,6 +36,7 @@ The purpose of this repository is to improve problem-solving skills, strengthen 
 ├── LinkedLists
 ├── Stack
 ├── Queue
+├── Circular Queue
 └── Deque
 ```
 
