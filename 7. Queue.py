@@ -165,7 +165,47 @@ print(pq.dequeue())
 
 #Queue Applications :- 
 #1. CPU Shedulling- 
+class CPU_Shedulling:
+    def __init__(self):
+        self.items = []
 
+    def insert(self, process, burst_time):
+        self.items.append((process, burst_time))
+
+    def delete(self):
+        if len(self.items) == 0:
+            print("Queue is Empty")
+            return
+
+        return self.items.pop(0)
+
+
+cs = CPU_Shedulling()
+
+cs.insert("P1", 5)
+cs.insert("P2", 3)
+cs.insert("P3", 6)
+cs.insert("P4", 4)
+
+waiting_time = 0
+total_waititng = 0
+
+
+print("Process\tBurst Time\tWaiting Time\tTurnout Time")
+
+while len(cs.items) > 0:
+    process, burst_time = cs.delete()
+
+    Turnout_time = waiting_time + burst_time
+
+    print(f"{process}\t{burst_time}\t\t{waiting_time}\t\t{Turnout_time}")
+
+    total_waititng += waiting_time
+    waiting_time += burst_time
+
+avg_waititng = total_waititng / 4
+
+print("Average Waiting Time: ", avg_waititng)
 
 
 
