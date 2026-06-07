@@ -208,6 +208,7 @@ avg_waititng = total_waititng / 4
 print("Average Waiting Time: ", avg_waititng)
 
 
+# 2. Printer Queue- 
 
 
 
