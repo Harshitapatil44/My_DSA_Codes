@@ -2,7 +2,7 @@
 # Linked List implementation - (done)
 # Priority queue - (done) 
 # Queue Application - 
-    # 1. CPU Scheduling
+    # 1. CPU Scheduling (done) 
     # 2. Printer Queue
     # 3. BFS (Breadth First Search)
     # 4. Ticket/Waiting Line Systems
