@@ -208,7 +208,51 @@ avg_waititng = total_waititng / 4
 print("Average Waiting Time: ", avg_waititng)
 
 
-# 2. Printer Queue- 
+# 2. Printer Queue - 
+class Printer_queue:
+    def __init__(self):
+        self.items = []
+
+    def insert(self, document, pages):
+        return self.items.append((document, pages))
+
+    def delete(self):
+        if len(self.items) == 0:
+            print("Queue is Empty")
+            return
+        return self.items.pop(0)
+
+
+pq = Printer_queue()
+
+pq.insert("Resume.pdf", 1)
+pq.insert("Project.pptx", 27)
+pq.insert("Theausus.docs", 150)
+pq.insert("Result.xlsx", 15)
+
+print("Documents\t\tPages")
+
+total_pages = 0
+
+while len(pq.items) > 0:
+    document, pages = pq.delete()
+    print(f"{document}\t\t{pages}")
+    
+    total_pages += pages
+
+print("Total Pages: ", total_pages)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
