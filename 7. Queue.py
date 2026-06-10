@@ -4,7 +4,7 @@
 # Queue Application - 
     # 1. CPU Scheduling (done) 
     # 2. Printer Queue (done) 
-    # 3. BFS (Breadth First Search)
+    # 3. BFS (Breadth First Search) (done) 
     # 4. Ticket/Waiting Line Systems
     # 5. Message/Task Scheduling
 
