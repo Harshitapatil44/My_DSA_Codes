@@ -242,17 +242,7 @@ while len(pq.items) > 0:
 
 print("Total Pages: ", total_pages)
 
-
-
-
-
-
-
-
-
-
-
-
+# 3. BFS (Breadth First Search) 
 
 
 
