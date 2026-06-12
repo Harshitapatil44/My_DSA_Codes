@@ -243,6 +243,48 @@ while len(pq.items) > 0:
 print("Total Pages: ", total_pages)
 
 # 3. BFS (Breadth First Search) 
+class BFS:
+    def __init__(self):
+        self.items = []
+
+    def insert(self, val):
+        return self.items.append(val)
+
+    def delete(self):
+        if len(self.items) == 0:
+            print("Queue is Empty")
+        return self.items.pop(0)
+
+    def is_empty(self):
+        return len(self.items) == 0
+
+
+def print_BFS(graph, start):
+    visited = set()
+    q = BFS()
+    visited.add(start)
+    q.insert(start)
+
+    while not q.is_empty():
+        node = q.delete()
+        print(node, end=" ")
+
+        for neighbor in graph[node]:
+            if neighbor not in visited:
+                visited.add(neighbor)
+                q.insert(neighbor)
+
+
+graph = {
+    "A": ["B", "C"],
+    "B": ["A", "D", "E"],
+    "C": ["A", "F"],
+    "D": ["B"],
+    "E": ["B", "F"],
+    "F": ["C", "E"],
+}
+print("BFS Traversal: ")
+print_BFS(graph, "A")
 
 
 
