@@ -288,6 +288,32 @@ print_BFS(graph, "A")
 
 
 # 4. Ticket/Waiting Line Systems 
+class TicketQueue:
+    def __init__(self):
+        self.items = []
+
+    def insert(self, Customer):
+        return self.items.append(Customer)
+
+    def delete(self):
+        if len(self.items) == 0:
+            print("No one at Counter...!!!")
+            return None
+        return self.items.pop(0)
+
+
+tq = TicketQueue()
+
+print("Ticket Queue: ")
+
+tq.insert("Customer 1")
+tq.insert("Customer 2")
+tq.insert("Customer 3")
+tq.insert("Customer 4")
+
+while len(tq.items) > 0:
+    customer = tq.delete()
+    print(customer)
 
 
 
