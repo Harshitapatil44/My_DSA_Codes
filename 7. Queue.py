@@ -5,7 +5,7 @@
     # 1. CPU Scheduling (done) 
     # 2. Printer Queue (done) 
     # 3. BFS (Breadth First Search) (done) 
-    # 4. Ticket/Waiting Line Systems
+    # 4. Ticket/Waiting Line Systems (done) 
     # 5. Message/Task Scheduling
 
 class Queue:
