@@ -287,4 +287,27 @@ print("BFS Traversal: ")
 print_BFS(graph, "A")
 
 
+# 4. Ticket/Waiting Line Systems 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
