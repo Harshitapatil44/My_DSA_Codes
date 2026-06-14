@@ -6,7 +6,7 @@
     # 2. Printer Queue (done) 
     # 3. BFS (Breadth First Search) (done) 
     # 4. Ticket/Waiting Line Systems (done) 
-    # 5. Message/Task Scheduling
+    # 5. Message/Task Scheduling (done) 
 
 class Queue:
     def __init__(self):
