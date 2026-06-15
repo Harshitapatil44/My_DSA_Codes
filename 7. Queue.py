@@ -318,6 +318,33 @@ while len(tq.items) > 0:
 
 # 5. Message/Task Scheduling 
 # Message Scheduling:
+class Msg_schedulling:
+    def __init__(self):
+        self.items = []
+
+    def insert(self, message):
+        return self.items.append(message)
+
+    def delete(self):
+        if len(self.items) == 0:
+            print("There is no Message to delete")
+        return self.items.pop(0)
+
+
+msg = Msg_schedulling()
+
+n = int(input("Enter number of message: "))
+
+for i in range(n):
+    message = input(f"Enter Message{i+1}: ")
+    msg.insert(message)
+
+print("Message Received: ")
+
+while len(msg.items) > 0:
+    print(msg.delete())
+
+
 
 
 
