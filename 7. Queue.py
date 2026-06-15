@@ -346,6 +346,31 @@ while len(msg.items) > 0:
 
 
 # 2. Task Shedulling:
+class task_shedulling:
+    def __init__(self):
+        self.items = []
+
+    def insert(self, task):
+        return self.items.append(task)
+
+    def delete(self):
+        if len(self.items) == 0:
+            print("There is No Task to Delete")
+        return self.items.pop(0)
+
+
+tsk = task_shedulling()
+
+n = int(input("Enter a number of Tasks: "))
+
+for i in range(n):
+    task = input(f"Enter a Task{i+1}: ")
+    tsk.insert(task)
+
+print("Scheduled Task: ")
+
+while len(tsk.items) > 0:
+    print(tsk.delete())
 
 
 
